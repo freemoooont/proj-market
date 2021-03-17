@@ -8,12 +8,11 @@
     box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.41);
     display: flex;
     border-radius: 28px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .top__menu--logo-wrapper{
-    margin-left: 38px;
-    margin-top: 21px;
-    margin-bottom: 15px;
     display: flex;
 }
 

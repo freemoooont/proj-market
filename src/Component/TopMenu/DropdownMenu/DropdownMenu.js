@@ -5,7 +5,7 @@ import Background from '../../../assets/img/Top_menu_background.svg'
 
 function DropdownMenu(props){
     const backiStyle = {
-        backgroundImage: `url(${props.background})`
+        background: `url(${props.background}) center no-repeat`
     }
 
     const menuRef = React.useRef();
