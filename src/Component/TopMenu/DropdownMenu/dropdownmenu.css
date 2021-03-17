@@ -1,0 +1,63 @@
+.top__menu--dropdown-menu{
+    margin-left: 78px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.dropdown-menu__btn{
+    outilne: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: #FFFFFF;
+    /* Убрать отдельно общие стили текстов*/
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dropdown-menu__btn-active{
+    opacity: 0.5;
+    outline: none;
+    color: #2F80ED;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: #FFFFFF;
+    /* Убрать отдельно общие стили текстов*/
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dropdown-menu__content_close{
+    display:none;
+}
+.dropdown-menu__content{
+    margin-top: 100px;
+    position: absolute;
+    padding: 60px 36px 60px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-menu__content a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px;
+    /* Cтили текста */
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+}
