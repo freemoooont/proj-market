@@ -1,0 +1,17 @@
+.user__menu{
+    background: url('../../../assets/img/users/supereclipse_user.svg') center center no-repeat;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    right: 90px;
+    top: 52px;
+    width: 109px;
+    height: 110px;
+}
+
+.user__menu img{
+    width: 62px;
+    height: 62px;
+}
