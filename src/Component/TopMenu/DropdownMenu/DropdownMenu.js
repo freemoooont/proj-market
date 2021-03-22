@@ -42,6 +42,6 @@ function DropdownMenu(props){
                 </animated.div>
         </div>
     )
-};
+}
 
 export default DropdownMenu;
