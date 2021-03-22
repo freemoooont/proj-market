@@ -1,5 +1,6 @@
 .top__menu--wrapper{
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     width: 1077px;
     height: 100px;
     left: 432px;

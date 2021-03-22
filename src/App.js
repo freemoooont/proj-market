@@ -1,18 +1,26 @@
+import React from 'react'
+import { useSelector, useDispatch} from "react-redux";
+import { Route } from 'react-router-dom'
+
+
 import Slider from './Component/Slider/Slider'
 import TopMenu from './Component/TopMenu/TopMenu'
 import UserMiniMenu from './Component/UI/UserMiniMenu/UserMiniMenu'
+import MainCard from './Component/ProjectCards/MainCard/MainCard'
 
-import UserImg from './assets/img/users/user_ico_dev.svg'
+import { Home } from './pages'
 
-function App() {
+import './App.css'
+
+function App( ) {
+
     return (
         <div className="wrapper">
             <UserMiniMenu />
-            <Slider />
             <TopMenu />
-        <div className="content"> CONTENT </div>
+            <Route path="/" component={Home} exact />
         </div>
     )
-};
+}
 
 export default App;

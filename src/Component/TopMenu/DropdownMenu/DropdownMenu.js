@@ -14,7 +14,7 @@ function DropdownMenu(props){
     const menuContent = useSpring({
         transform: isOpen ? "translate3D(0,0,0)" : "translate3D(0,-40px,0",
         opacity: isOpen ? 1 : 0,
-        config: config.wobbly
+        config: config.stiff
     })
 
     const handleClickOutside = (event) =>{
