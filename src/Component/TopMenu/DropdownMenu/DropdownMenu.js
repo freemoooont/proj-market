@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import './dropdownmenu.css'
-
-import Background from '../../../assets/img/Top_menu_background.svg'
+import { animated, useSpring, config } from "react-spring";
 
 function DropdownMenu(props){
-    const backiStyle = {
-        background: `url(${props.background}) center no-repeat`
-    }
+
+    const {menuNames} = props;
 
     const menuRef = React.useRef();
 
-    const [open, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false);
+
+    //анимация меню
+    const menuContent = useSpring({
+        transform: isOpen ? "translate3D(0,0,0)" : "translate3D(0,-40px,0",
+        opacity: isOpen ? 1 : 0,
+        config: config.wobbly
+    })
 
     const handleClickOutside = (event) =>{
         const path = event.path || (event.composedPath && event.composedPath());
@@ -25,17 +30,16 @@ function DropdownMenu(props){
 
     return(
         <div ref={menuRef} className="top__menu--dropdown-menu">
-            <button onClick={() => setOpen(!open)} className={!open ? `dropdown-menu__btn`:`dropdown-menu__btn-active`}>{props.btnName}</button>
-            <div className={ open ? `dropdown-menu__content`:`dropdown-menu__content_close`} style = { backiStyle }>
-                {
-                    props.menuNames.map((item,index)=>{
-                        return(
+            <button onClick={() => setOpen(!isOpen)} className={!isOpen ? `dropdown-menu__btn`:`dropdown-menu__btn-active`}>{props.btnName}</button>
+                <animated.div style={menuContent} className='dropdown-menu__content' >
+                { isOpen ?
+                    menuNames.map((item, index) => {
+                        return (
                             <a key={index} href='#'>{item}</a>
                         )
-                    })
+                    }) : null
                 }
-
-            </div>
+                </animated.div>
         </div>
     )
 };
