@@ -33,7 +33,7 @@ function MainCard( props ){
             <div className="card__container">
                 <div className="card__status">
                     <div className={`card__status--${status}`}> {availableText[status]} </div>
-                    <img src={ico}/>      {/*как-то необходимо решить эту проблему*/}
+                    <img src={ico}/>
                 </div>
                 <div className="card__text">
                     <div className="card__name">
