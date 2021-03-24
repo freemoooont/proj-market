@@ -7,7 +7,9 @@ import { Slider, ProjMiniCard } from '../../Component'
 
 
 import cardImg from '../../assets/img/project/Cards_main_dev.png'
-import {setCards} from "../../redux/actions/cards";
+
+
+import {fetchCards, setCards} from "../../redux/actions/cards";
 
 //Dev вариант
 const cardsItems = [{
@@ -42,15 +44,11 @@ const cardsItems = [{
 function Home( ) {
 
     const dispatch = useDispatch();
-    const { items } = useSelector(( {cards} ) => {
-        return {
-            items: cards.items,
-        }
-    });
+    const items  = useSelector(( {cards} ) => cards.items);
 
     React.useEffect(()=> {
-        dispatch(setCards(cardsItems));
-    }, []);
+        dispatch(fetchCards());
+    },[]);
 
     return (
         <Fragment>
