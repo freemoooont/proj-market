@@ -8,6 +8,7 @@ import opn from '../../../assets/img/project/status_ico/lock_open.svg';
 function MainCard( props ){
 
     const [status, setStatus] = useState('open');
+    const [ico, setIco] = useState();
 
     const availableText = {
         opn: 'Ведётся набор на проект',
@@ -15,11 +16,16 @@ function MainCard( props ){
         fnshd: 'Проект завершён'
     };
 
-    const availableIco = [{fnshd}, {iprgrs}, {opn}]
+    const availableIco = {fnshd, iprgrs, opn}
+
 
     useEffect(()=>{
         setStatus(props.project_status)
     },[])
+
+    useEffect(()=>{
+        setIco(availableIco[status])
+    },[status])
 
     return (
         <div className="main__card">
@@ -27,7 +33,7 @@ function MainCard( props ){
             <div className="card__container">
                 <div className="card__status">
                     <div className={`card__status--${status}`}> {availableText[status]} </div>
-                    <img src={fnshd}/>      {/*как-то необходимо решить эту проблему*/}
+                    <img src={ico}/>
                 </div>
                 <div className="card__text">
                     <div className="card__name">
