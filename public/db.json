@@ -10,7 +10,7 @@
       "currentPeople": 12
     },
     {
-      "id": 1,
+      "id": 2,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 2",
       "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -19,7 +19,7 @@
       "currentPeople": 12
     },
     {
-      "id": 1,
+      "id": 3,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 3",
       "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -28,7 +28,7 @@
       "currentPeople": 12
     },
     {
-      "id": 1,
+      "id": 4,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 4",
       "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -37,7 +37,7 @@
       "currentPeople": 12
     },
     {
-      "id": 1,
+      "id": 5,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 5",
       "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -46,7 +46,7 @@
       "currentPeople": 12
     },
     {
-      "id": 1,
+      "id": 6,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 6",
       "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",

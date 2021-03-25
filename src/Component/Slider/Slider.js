@@ -17,7 +17,6 @@ function Slider(){
         const x = (id+1)*100-100;
         setX(-x);
         changeActiveSlide(id);
-        console.log(activeSlide);
     }
 
 
