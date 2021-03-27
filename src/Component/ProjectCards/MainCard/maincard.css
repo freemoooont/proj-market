@@ -93,3 +93,6 @@
     border-radius: 50%;
     background-color: #90FFA2;
 }
+.card__footer {
+    margin-top: 32px;
+}
