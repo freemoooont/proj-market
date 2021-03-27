@@ -21,15 +21,17 @@ function Home( ) {
     return (
         <Fragment>
             <Slider />
-            <div className="content">
-                <div className="card__wrapper">
-                {
-                    items.map((obj) =>
-                    <ProjMiniCard key={obj.id} {...obj} />
-                    )
-                }
+            <section className="cards">
+                <div className="container">
+                    <div className="card__wrapper">
+                    {
+                        items.map((obj) =>
+                        <ProjMiniCard key={obj.id} {...obj} />
+                        )
+                    }
+                    </div>
                 </div>
-            </div>
+            </section>
         </Fragment>
     )
 }

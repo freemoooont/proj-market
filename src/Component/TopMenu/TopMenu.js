@@ -42,8 +42,9 @@ function TopMenu(){
             </div>
             <DropdownMenu background={menu.menu1.background} btnName={menu.menu1.btnName} menuNames={menu.menu1.menu1}/>
             <DropdownMenu background={menu.menu2.background} btnName={menu.menu2.btnName} menuNames={menu.menu2.menu2}/>
-            <DropdownMenu background={menu.menu3.background} btnName={menu.menu3.btnName} menuNames={menu.menu3.menu3}/>
-            <DropdownMenu background={menu.menu4.background} btnName={menu.menu1.btnName} menuNames={menu.menu4.menu4}/>
+            <DropdownMenu background={menu.menu3.background} btnName={menu.menu3.btnName} menuNames={menu.menu3.menu1}/>
+            <DropdownMenu background={menu.menu4.background} btnName={menu.menu4.btnName} menuNames={menu.menu4.menu2}/>
+           
         </div>
     )
 }

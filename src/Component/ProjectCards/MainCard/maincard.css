@@ -4,7 +4,7 @@
     background: #F2F2FF;
     box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
     border-radius: 21px;
-    text-align: center;
+    position: relative;
 }
 
 .main__card img{
@@ -21,4 +21,75 @@
 
 .card__status--iprgrs{
     color: #0B8B00;
+}
+.card__container {
+    padding: 18px 30px 15px;
+}
+.card__status {
+    display: flex;
+    height: 57px;
+    align-items: center;
+}
+.card__status img {
+    width: 24px;
+    height: 24px;
+    margin: 0 12px 0 3px;
+}
+.card__br {
+    width: 317px;
+    height: 1px;
+    background: black;
+}
+.card__title {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+}
+.card__descr {
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    height: 58px;
+}
+.card__footer {
+    margin-top: 32px;
+    position: relative;
+    font-size: 14px;
+}
+.card__bar {
+    margin-top: 30px;
+    display: inline-block;
+}
+.card__bar__line, .card__bar__line_now {
+    height: 8px;
+    position: relative;
+}
+.card__bar__line {
+    width: 207px;
+    background-color: #fff;  
+}
+.card__bar__line_now {
+    width: 80%; /* Динамическое значение */ 
+    background-color: #CAF946;
+}
+.card__bar_text-finish, .card__bar_text-now {
+    position: absolute;
+    right: 0;
+}
+.card__bar_text-finish {
+    bottom: 21px;
+}
+.card__bar_text-now {
+    top: 21px;
+}
+.card__insts {
+    position: absolute;
+    bottom: 19px;
+    right: 31px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #90FFA2;
 }

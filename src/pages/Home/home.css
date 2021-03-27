@@ -1,12 +1,14 @@
-.content {
-    min-width: 1550px;
-    margin: 50px 320px;
+.cards {
+    margin-top: 77px;
+}
+.container {
+    width: 1300px;
+    margin: 0 auto;
 }
 
 .card__wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 127px;
+    grid-row-gap: 96px;
 }

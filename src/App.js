@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Route } from 'react-router-dom'
 
 import { TopMenu, UserMiniMenu } from './Component'
@@ -10,12 +10,12 @@ import './App.css'
 function App( ) {
 
     return (
-        <div className="wrapper">
+        <Fragment>
             <UserMiniMenu />
             <TopMenu />
             <Route path="/" component={Home} exact />
             <Footer />
-        </div>
+        </Fragment>
     )
 }
 

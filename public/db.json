@@ -4,7 +4,7 @@
       "id": 1,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 1",
-      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lore lore lore ipsum lorem ipsum lorem ipsum lorem ipsum",
       "project_status": "opn",
       "maxPeople": 13,
       "currentPeople": 12
@@ -13,7 +13,7 @@
       "id": 2,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 2",
-      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "description": "lorem ipsum lorem ipsum",
       "project_status": "iprgrs",
       "maxPeople": 13,
       "currentPeople": 12
@@ -22,7 +22,7 @@
       "id": 3,
       "imgUrl": "Cards_main_dev.png",
       "name": "Название проекта 3",
-      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lore lore lorem ipsum lorem ipsum lorem ipsum",
       "project_status": "fnshd",
       "maxPeople": 13,
       "currentPeople": 12
