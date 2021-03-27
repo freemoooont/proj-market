@@ -1,0 +1,58 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "imgUrl": "Cards_main_dev.png",
+      "name": "Название проекта 1",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "project_status": "opn",
+      "maxPeople": 13,
+      "currentPeople": 12
+    },
+    {
+      "id": 2,
+      "imgUrl": "Cards_main_dev.png",
+      "name": "Название проекта 2",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "project_status": "iprgrs",
+      "maxPeople": 13,
+      "currentPeople": 12
+    },
+    {
+      "id": 3,
+      "imgUrl": "Cards_main_dev.png",
+      "name": "Название проекта 3",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "project_status": "fnshd",
+      "maxPeople": 13,
+      "currentPeople": 12
+    },
+    {
+      "id": 4,
+      "imgUrl": "Cards_main_dev.png",
+      "name": "Название проекта 4",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "project_status": "iprgrs",
+      "maxPeople": 13,
+      "currentPeople": 12
+    },
+    {
+      "id": 5,
+      "imgUrl": "Cards_main_dev.png",
+      "name": "Название проекта 5",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "project_status": "iprgrs",
+      "maxPeople": 13,
+      "currentPeople": 12
+    },
+    {
+      "id": 6,
+      "imgUrl": "Cards_main_dev.png",
+      "name": "Название проекта 6",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "project_status": "opn",
+      "maxPeople": 13,
+      "currentPeople": 12
+    }
+  ]
+}

@@ -12,8 +12,8 @@
 .slide{
     min-width: 100%;
     height: 784px;
-    transition: .5s;
     overflow: hidden;
+    /*will-change: transform, opacity;*/
 }
 
 .slider__nav-wrapper{
