@@ -32,7 +32,7 @@ function Slider(){
 
 
     return(
-        <div className="slider">
+        <section className="slider">
 
             {transitions.map(({ item, props, key }) => {
                 const Page = pages[item]
@@ -47,7 +47,7 @@ function Slider(){
                     })
                 }
             </span>
-        </div>
+        </section>
     )
 };
 

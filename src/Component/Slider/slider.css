@@ -1,6 +1,5 @@
 .slider{
     width: 100%;
-    height: 784px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,15 +12,19 @@
     min-width: 100%;
     height: 784px;
     overflow: hidden;
-    /*will-change: transform, opacity;*/
+    background: linear-gradient(
+        180deg
+        , rgba(235, 235, 235, 0) 79.46%, #EBEBEB 100%);
 }
+
+
 
 .slider__nav-wrapper{
     display: flex;
     position: absolute;
     width: 145px;
     height: 23px;
-    left: 888px;
+    left: calc(50% - 73px);
     top: 693px;
 }
 

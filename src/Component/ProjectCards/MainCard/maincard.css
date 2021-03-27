@@ -4,7 +4,6 @@
     background: #F2F2FF;
     box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
     border-radius: 21px;
-    text-align: center;
 }
 
 .main__card img{
@@ -21,4 +20,37 @@
 
 .card__status--iprgrs{
     color: #0B8B00;
+}
+.card__container {
+    padding: 18px 30px 15px;
+}
+.card__status {
+    display: flex;
+    height: 57px;
+    align-items: center;
+}
+.card__status img {
+    width: 24px;
+    height: 24px;
+    margin: 0 12px 0 3px;
+}
+.card__br {
+    width: 317px;
+    height: 1px;
+    background: black;
+}
+.card__title {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+}
+.card__descr {
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+}
+.card__footer {
+    margin-top: 32px;
 }
