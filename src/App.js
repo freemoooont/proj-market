@@ -3,7 +3,8 @@ import { Route } from 'react-router-dom'
 
 import { TopMenu, UserMiniMenu } from './Component'
 import { Footer } from './Layouts'
-import { Home } from './pages'
+import { Home, Project } from './pages'
+
 
 import './App.css'
 
@@ -14,6 +15,7 @@ function App( ) {
             <UserMiniMenu />
             <TopMenu />
             <Route path="/" component={Home} exact />
+            <Route path="/project/1" component={Project} exact/>
             <Footer />
         </Fragment>
     )

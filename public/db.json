@@ -54,5 +54,12 @@
       "maxPeople": 13,
       "currentPeople": 12
     }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "title": "Название проекта 1"
+
+    }
   ]
 }

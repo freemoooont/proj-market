@@ -4,6 +4,7 @@ import './maincard.css';
 import fnshd from '../../../assets/img/project/status_ico/done.svg';
 import iprgrs from '../../../assets/img/project/status_ico/lock.svg';
 import opn from '../../../assets/img/project/status_ico/lock_open.svg';
+import {Link} from "react-router-dom";
 
 function MainCard( props ){
 
@@ -38,7 +39,7 @@ function MainCard( props ){
                 <div className="card__br"></div>
                 <div className="card__text">
                     <div className="card__title">
-                        {props.name}
+                        <Link to="/project/1">{props.name}</Link>
                     </div>
                     <div className="card__descr">
                         {props.description}
