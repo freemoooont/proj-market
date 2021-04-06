@@ -1,25 +1,25 @@
 const initialState = {
     items: [],
     isLoaded: false
-};
+}
 
-const cards = (state = initialState, action) => {
-    switch (action.type) {
-        case 'SET_CARDS':
+const project = (state = initialState, action) => {
+    switch (action.type){
+        case 'SET_PROJECT' :
             return {
                 ...state,
                 items: action.payload,
-                isLoaded: true //Кеша лох. // ??/?
+                isLoaded: true
             };
-        case 'SET_LOADED':
+        case 'SET_LOADED' :
             return {
                 ...state,
                 isLoaded: action.payload
             };
 
-            default:
-            return state;
+        default:
+                return state;
     }
 };
 
-export default cards;
+export default project;

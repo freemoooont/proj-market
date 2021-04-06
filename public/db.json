@@ -55,12 +55,70 @@
       "currentPeople": 12
     }
   ],
-  "project": [
+  "projects": [
     {
       "id": 1,
+      "img_side" : "Side_dev.png",
+      "img_header" : "Header_dev.png",
       "title": "Название проекта 1",
       "brief_desc": "Это краткое описание проекта",
-      "author": "Это автор проекта",
+      "project_status" : "opn",
+      "max_people" : 14,
+      "current_people" : 4,
+      "people" : [
+        {
+          "id" : 1,
+          "name" : "Зепнов Иван Васильевич",
+          "ico_url" : "zipa_dev.img",
+          "position" : "Менеджер"
+        },
+        {
+          "id" : 2,
+          "name" : "Зепнов Иван Васильевич",
+          "ico_url" : "zipa_dev.img",
+          "position" : "Менеджер"
+        },
+        {
+          "id" : 3,
+          "name" : "Зепнов Иван Васильевич",
+          "ico_url" : "zipa_dev.img",
+          "position" : "Менеджер"
+        },
+        {
+          "id" : 4,
+          "name" : "Зепнов Иван Васильевич",
+          "ico_url" : "zipa_dev.img",
+          "position" : "Менеджер"
+        }
+      ],
+      "desc" : [
+        { "p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit et orci, aliquam tincidunt diam non dignissim. Id odio laoreet erat elementum diam velit aliquam ultrices est. Adipiscing posuere aliquam at sit eget eget amet vitae nulla. Adipiscing in velit quis non curabitur. Sit odio malesuada integer risus sed. Turpis cursus pretium et eu viverra ut erat arcu tellus. Ut pretium est diam eget feugiat amet. Magna laoreet lorem non urna enim justo, eros. Aliquam, sit viverra tincidunt adipiscing." },
+        { "p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit et orci, aliquam tincidunt diam non dignissim. Id odio laoreet erat elementum diam velit aliquam ultrices est. Adipiscing posuere aliquam at sit eget eget amet vitae nulla. Adipiscing in velit quis non curabitur. Sit odio malesuada integer risus sed. Turpis cursus pretium et eu viverra ut erat arcu tellus. Ut pretium est diam eget feugiat amet. Magna laoreet lorem non urna enim justo, eros. Aliquam, sit viverra tincidunt adipiscing.\n" },
+        { "p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit et orci, aliquam tincidunt diam non dignissim. Id odio laoreet erat elementum diam velit aliquam ultrices est. Adipiscing posuere aliquam at sit eget eget amet vitae nulla. Adipiscing in velit quis non curabitur. Sit odio malesuada integer risus sed. Turpis cursus pretium et eu viverra ut erat arcu tellus. Ut pretium est diam eget feugiat amet. Magna laoreet lorem non urna enim justo, eros. Aliquam, sit viverra tincidunt adipiscing." },
+        { "p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit et orci, aliquam tincidunt diam non dignissim. Id odio laoreet erat elementum diam velit aliquam ultrices est. Adipiscing posuere aliquam at sit eget eget amet vitae nulla. Adipiscing in velit quis non curabitur. Sit odio malesuada integer risus sed. Turpis cursus pretium et eu viverra ut erat arcu tellus. Ut pretium est diam eget feugiat amet. Magna laoreet lorem non urna enim justo, eros. Aliquam, sit viverra tincidunt adipiscing." }
+      ],
+      "deadlines" : [{
+        "deadlines_1": [{
+          "title" : "Дедлайн 1",
+          "date" : "2021-12-03"
+        }],
+        "deadlines_2": [{
+          "title" : "Дедлайн 2",
+          "date" : "2022-01-05"
+        }],
+        "deadlines_3": [{
+          "title" : "Дедлайн 3",
+          "date" : "2022-02-01"
+        }]
+      }],
+      "author": [{
+        "id" : 1,
+        "name" : "Иван Иванович Иванов",
+        "ico" : "ico_author_dev.png",
+        "position" : "Профессор",
+        "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui dignissim aliquam erat. Aliquam donec augue laoreet justo, eget massa scelerisque ultrices. Vel dictum accumsan elit dictum condimentum hendrerit scelerisque aliquam vitae. Arcu leo eu lobortis risus. Congue sit a morbi feugiat sit aliquam, vitae eleifend condimentum.",
+        "malito" : "ivanov@istu.edu"
+      }],
       "description": "Это полное описание проекта"
     }
   ]

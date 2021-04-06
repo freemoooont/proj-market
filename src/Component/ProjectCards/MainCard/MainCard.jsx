@@ -39,7 +39,7 @@ function MainCard( props ){
                 <div className="card__br"></div>
                 <div className="card__text">
                     <div className="card__title">
-                        <Link to="/project/1">{props.name}</Link>
+                        <Link to={`/project/${props.id}`}>{props.name}</Link>
                     </div>
                     <div className="card__descr">
                         {props.description}

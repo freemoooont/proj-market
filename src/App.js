@@ -15,7 +15,7 @@ function App( ) {
             <UserMiniMenu />
             <TopMenu />
             <Route path="/" component={Home} exact />
-            <Route path="/project/1" component={Project} exact/>
+            <Route path="/project/:projId" component={Project} exact/>
             <Footer />
         </Fragment>
     )
