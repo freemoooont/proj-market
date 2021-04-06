@@ -4,8 +4,7 @@ import "./projectheader.css"
 
 function ProjectHeader() {
     return(
-
-        <div>Header страница проекта</div>
+        <div className="project__title">Header страница проекта</div>
     )
 }
 export default ProjectHeader;
