@@ -7,7 +7,8 @@ export const fetchProject = (id) => dispatch => {
         )
         .then(
             ({data}) =>{
-            dispatch(setProject(data.projects[id]))
+            dispatch(setProject(data.projects[id]));
+            dispatch(setAuthor(data.projects[id]["author"]))
         } )
 }
 
@@ -16,6 +17,10 @@ export const setProject = (items) => ({
     payload: items
 });
 
+export const setAuthor = (items) => ({
+    type: 'SET_AUTHOR',
+    payload: items
+})
 export const setLoaded = (payload) => ({
     type: 'SET_LOADED',
     payload

@@ -111,14 +111,14 @@
           "date" : "2022-02-01"
         }]
       }],
-      "author": [{
+      "author": {
         "id" : 1,
         "name" : "Иван Иванович Иванов",
         "ico" : "ico_author_dev.png",
         "position" : "Профессор",
         "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui dignissim aliquam erat. Aliquam donec augue laoreet justo, eget massa scelerisque ultrices. Vel dictum accumsan elit dictum condimentum hendrerit scelerisque aliquam vitae. Arcu leo eu lobortis risus. Congue sit a morbi feugiat sit aliquam, vitae eleifend condimentum.",
         "malito" : "ivanov@istu.edu"
-      }],
+      },
       "description": "Это полное описание проекта"
     }
   ]

@@ -1,5 +1,6 @@
 const initialState = {
     items: [],
+    author: [],
     isLoaded: false
 }
 
@@ -16,6 +17,11 @@ const project = (state = initialState, action) => {
                 ...state,
                 isLoaded: action.payload
             };
+        case 'SET_AUTHOR' :
+            return {
+                ...state,
+                author: action.payload
+            }
 
         default:
                 return state;

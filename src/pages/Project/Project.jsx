@@ -13,11 +13,18 @@ function Project(){
     const dispatch = useDispatch();
     const state = useSelector( ( {project} ) => project.items);
 
+    const author = useSelector( ( {project} ) => project.author)
+    console.log(author.name)
+
     React.useEffect(()=>{
         dispatch(fetchProject(projId-1));
+        console.log(state);
     },[])
 
-    console.log(state);
+    React.useEffect(()=>{
+        console.log(state.author)
+    },[state])
+
     return(
         <div>
             <ProjectHeader/>
