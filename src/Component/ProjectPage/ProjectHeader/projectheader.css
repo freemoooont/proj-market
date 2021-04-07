@@ -1,0 +1,11 @@
+.project__header{
+    width: 100%;
+    font-size: 72px;
+}
+.project__title{
+    z-index: 1;
+    position: absolute;
+    left: 410px;
+    top: 205px;
+}
+

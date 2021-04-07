@@ -9,7 +9,7 @@ const cards = (state = initialState, action) => {
             return {
                 ...state,
                 items: action.payload,
-                isLoaded: true //Кеша лох. // ??/?
+                isLoaded: true
             };
         case 'SET_LOADED':
             return {
