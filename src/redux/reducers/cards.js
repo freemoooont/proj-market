@@ -11,6 +11,7 @@ const cards = (state = initialState, action) => {
                 items: action.payload,
                 isLoaded: true
             };
+
         case 'SET_LOADED':
             return {
                 ...state,
