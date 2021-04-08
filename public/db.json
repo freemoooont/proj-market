@@ -97,20 +97,20 @@
         { "p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit et orci, aliquam tincidunt diam non dignissim. Id odio laoreet erat elementum diam velit aliquam ultrices est. Adipiscing posuere aliquam at sit eget eget amet vitae nulla. Adipiscing in velit quis non curabitur. Sit odio malesuada integer risus sed. Turpis cursus pretium et eu viverra ut erat arcu tellus. Ut pretium est diam eget feugiat amet. Magna laoreet lorem non urna enim justo, eros. Aliquam, sit viverra tincidunt adipiscing." },
         { "p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit et orci, aliquam tincidunt diam non dignissim. Id odio laoreet erat elementum diam velit aliquam ultrices est. Adipiscing posuere aliquam at sit eget eget amet vitae nulla. Adipiscing in velit quis non curabitur. Sit odio malesuada integer risus sed. Turpis cursus pretium et eu viverra ut erat arcu tellus. Ut pretium est diam eget feugiat amet. Magna laoreet lorem non urna enim justo, eros. Aliquam, sit viverra tincidunt adipiscing." }
       ],
-      "deadlines" : [{
-        "deadlines_1": [{
+      "deadlines" : [
+         {
           "title" : "Дедлайн 1",
           "date" : "2021-12-03"
-        }],
-        "deadlines_2": [{
+        },
+         {
           "title" : "Дедлайн 2",
           "date" : "2022-01-05"
-        }],
-        "deadlines_3": [{
+        },
+         {
           "title" : "Дедлайн 3",
           "date" : "2022-02-01"
-        }]
-      }],
+        }
+      ],
       "author": {
         "id" : 1,
         "name" : "Иван Иванович Иванов",

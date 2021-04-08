@@ -2,7 +2,7 @@
     width: 100%;
     font-size: 72px;
 }
-.project__title{
+.project__header--info{
     z-index: 1;
     position: absolute;
     left: 410px;
