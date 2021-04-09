@@ -25,7 +25,7 @@ function App( ) {
     },[])
 
     let location = useLocation()
-    console.log(location)
+    console.log(isLogin)
 
     return (
         <Fragment>
@@ -39,15 +39,15 @@ function App( ) {
                             onClickHandle={onEnterHandler}
                         />
             }
-            {location.pathname != "/project/1" ?
+            {
+                location.pathname != "/project/1" ?
                 <TopMenu/>
                 :null
             }
-            <UserMiniMenu />
 
             <Route path="/" component={Home} exact />
             <Route path="/project/:projId" component={Project} exact/>
-            <Route path="/profile" component={Profile}/>
+            <Route path="/profile" component={Profile} exact/>
             <Footer />
         </Fragment>
     )
