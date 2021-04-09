@@ -1,5 +1,6 @@
 import React, {Fragment, useCallback } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, useLocation } from 'react-router-dom'
+
 
 import { TopMenu, UserMiniMenu } from './Component'
 import { Footer } from './Layouts'
@@ -23,6 +24,9 @@ function App( ) {
          dispatch(fetchUser(0))
     },[])
 
+    let location = useLocation()
+    console.log(location)
+
     return (
         <Fragment>
             {
@@ -35,7 +39,12 @@ function App( ) {
                             onClickHandle={onEnterHandler}
                         />
             }
-            <TopMenu />
+            {location.pathname != "/project/1" ?
+                <TopMenu/>
+                :null
+            }
+            <UserMiniMenu />
+
             <Route path="/" component={Home} exact />
             <Route path="/project/:projId" component={Project} exact/>
             <Route path="/profile" component={Profile}/>
