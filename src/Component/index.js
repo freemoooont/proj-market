@@ -4,4 +4,5 @@ export { default as Slider } from './Slider/Slider'
 export { default as ProjMiniCard } from './ProjectCards/MainCard/MainCard'
 export { default as UserInfo } from './ProfilePage/UserInfo/UserInfo'
 export { default as ProjWrapper } from './ProfilePage/ProjWrapper/ProjWrapper'
+export { default as ProjectHeader} from './ProjectPage/ProjectHeader/ProjectHeader'
 

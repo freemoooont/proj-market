@@ -1,10 +1,9 @@
 import React, {Fragment} from 'react'
-import { useSelector, useDispatch} from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import './home.css'
 
 import { Slider, ProjMiniCard } from '../../Component'
-
 
 import { fetchCards } from "../../redux/actions/cards";
 
@@ -17,7 +16,7 @@ function Home( ) {
     React.useEffect(()=> {
         dispatch(fetchCards());
     },[]);
-
+    console.log(items);
     return (
         <Fragment>
             <Slider />

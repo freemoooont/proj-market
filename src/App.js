@@ -3,7 +3,8 @@ import { Route, Link } from 'react-router-dom'
 
 import { TopMenu, UserMiniMenu } from './Component'
 import { Footer } from './Layouts'
-import { Home, Profile } from './pages'
+import { Home, Project, Profile } from './pages'
+
 
 import './App.css'
 import {useDispatch, useSelector} from "react-redux";
@@ -36,6 +37,7 @@ function App( ) {
             }
             <TopMenu />
             <Route path="/" component={Home} exact />
+            <Route path="/project/:projId" component={Project} exact/>
             <Route path="/profile" component={Profile}/>
             <Footer />
         </Fragment>
