@@ -56,16 +56,16 @@
     }
   ],
   "users" : [
-    [{
+    {
       "id" : 1,
       "userFullName" : "Александр Сергеевич Левкевич",
       "userImg" : "sanya_dev.png",
       "userYears" : 20,
       "userGroup" : "Асуб-18-1",
       "studyInfo" : {
+        "formaObuch" : "очная",
+        "mainProgram" : "09.03.01 Информатика и вычислительная техника",
         "program" : "Автоматизированные системы обработки информации и управления",
-        "mainProgram" : "Информатика и вычислительная техника",
-        "napravlenie" : "09.03.01",
         "yearPostupleniya" : "2018"
       },
       "userAchiev" : [
@@ -77,6 +77,6 @@
         {"p": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."},
         {"p": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
       ]
-    }]
+    }
   ]
 }

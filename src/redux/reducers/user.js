@@ -1,5 +1,6 @@
 const initialState = {
     items : [],
+    selectProj: [],
     isLoaded : false,
     isLogin : false
 };
@@ -7,28 +8,28 @@ const initialState = {
 const user = (state = initialState, action) => {
     switch (action.type){
         case 'SET_USER' :
-            console.log('YA TUT! user')
             return {
                 ...state,
                 items: action.payload,
                 isLoaded: true,
-                isLogin: true
             }
         case 'SET_LOADED' :
-            console.log('YA TUT! loaded')
             return {
                 ...state,
                 isLoaded: true
             };
         case 'SET_LOGIN' :
-            console.log('YA TUT! login')
             return {
                 ...state,
                 isLogin: true
             }
+        case 'SELECT_PROJ':
+            return {
+                ...state,
+                selectProj: [...state.selectProj, action.payload]
+            }
 
         default:
-            console.log('YA TUT! default')
             return state;
     }
 };

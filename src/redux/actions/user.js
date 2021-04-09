@@ -1,15 +1,11 @@
 import axios from "axios";
 
 export const fetchUser = (id) => dispatch => {
-    // dispatch(({
-    //     type: 'SET_LOADED',
-    //     payload: false
-    // }))
-
     axios
         .get('http://localhost:3000/db.json')
         .then(( {data} ) => {
             dispatch(setUser(data.users[id]))
+            dispatch(setLogin(true))
         })
 }
 
@@ -26,4 +22,9 @@ export const setLogin = (payload) => ({
 export const setLoaded = (payload) => ({
     type: 'SET_LOADED',
     payload
+})
+
+export const selectProj = (id) => ({
+    type: 'SELECT_PROJ',
+    payload: id
 })

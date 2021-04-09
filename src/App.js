@@ -1,36 +1,42 @@
-import React, {Fragment, useCallback} from 'react'
-import { Route } from 'react-router-dom'
+import React, {Fragment, useCallback } from 'react'
+import { Route, Link } from 'react-router-dom'
 
 import { TopMenu, UserMiniMenu } from './Component'
 import { Footer } from './Layouts'
-import { Home } from './pages'
+import { Home, Profile } from './pages'
 
 import './App.css'
 import {useDispatch, useSelector} from "react-redux";
 
 import { fetchUser } from './redux/actions/user'
-import {useCookies} from "react-cookie";
+
 
 function App( ) {
     const dispatch = useDispatch();
-    const user = useSelector(( { user } ) => user.items);
     const isLogin = useSelector( ({ user }) => user.isLogin);
+    const user = useSelector(( { user } ) => user.items);
+    const isLoaded = useSelector ( ({ user }) => user.isLoaded);
 
-    const [usrCookies, setUsrCookie, removeCookie] = useCookies()
 
-    React.useEffect(()=>{
-        dispatch(fetchUser(0))
+    const onEnterHandler = useCallback  ( ()=> {
+         dispatch(fetchUser(0))
     },[])
-
-    const onEnterHandler = useCallback(() =>{
-        setUsrCookie()
-    },[] )
 
     return (
         <Fragment>
-            <UserMiniMenu />
+            {
+                    isLogin ?
+                        <Link to="/profile">
+                            <UserMiniMenu isLogin = {isLogin} ico={user.userImg}/>
+                        </Link>
+                        : <UserMiniMenu
+                            isLogin = {isLogin}
+                            onClickHandle={onEnterHandler}
+                        />
+            }
             <TopMenu />
             <Route path="/" component={Home} exact />
+            <Route path="/profile" component={Profile}/>
             <Footer />
         </Fragment>
     )

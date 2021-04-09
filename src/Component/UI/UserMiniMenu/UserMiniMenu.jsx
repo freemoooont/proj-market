@@ -3,12 +3,16 @@ import './userminimenu.css'
 
 import userImg from '../../../assets/img/users/user_ico_dev.svg'
 
-function UserMiniMenu ( { props } ){
+const UserMiniMenu = React.memo(function UserMiniMenu ( { ico, onClickHandle, isLogin } ){
     return(
         <div className="user__menu">
-            <img src={userImg}/>
+            {
+                !isLogin ?
+                    <button onClick={onClickHandle}> Войти </button>
+                    : <img src={`/${ico}`}/>
+            }
         </div>
     )
-}
+})
 
 export default UserMiniMenu;
