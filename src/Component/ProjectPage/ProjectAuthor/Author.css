@@ -1,0 +1,10 @@
+.author_info {
+  display: flex;
+  margin-right: 30px;
+}
+
+.author_name_and_position {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}

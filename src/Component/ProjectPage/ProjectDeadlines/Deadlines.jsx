@@ -4,12 +4,16 @@ function Deadlines({deadlines}){
     return(
         <div>
             <h2 className="deadline__label">Сроки</h2>
-            {
-                deadlines?
-                    console.log(deadlines)
-                    : console.log(deadlines)
-
-            }
+            <table>
+            {deadlines.map((dedline) => {
+                return (
+                        <tr key={dedline.id}>
+                            <td>{ dedline.title }</td>
+                            <td>{ dedline.date }</td>
+                        </tr>
+                )
+            })}
+            </table>
         </div>
     )
 }
