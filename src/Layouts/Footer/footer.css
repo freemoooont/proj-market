@@ -1,6 +1,39 @@
-.footer {
-    margin-top: 100px;
-    width: 100%;
+.footer{
     background: #C4C4C4;
-    height: 455px;
+    font-size: 24px;
+    line-height: 28px;
+}
+.footer .container {
+    display: flex;
+    padding: 67px 0 44px 0;
+}
+.footer_left {
+    width: 724px;
+    position: relative;
+}
+.footer_left::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.footer_left-bottom {
+    margin-top: 63px;
+    font-size: 36px;
+    line-height: 42px;
+}
+.footer_right {
+    margin-left: 30px;
+}
+
+.footer_right-bottom {
+    margin-top: 51px;
+}
+.footer_right-bottom li{
+    font-size: 20px;
+    line-height: 24px;
+    list-style: none;
 }

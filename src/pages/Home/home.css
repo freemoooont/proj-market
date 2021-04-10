@@ -1,14 +1,9 @@
 .cards {
     margin-top: 77px;
 }
-.container {
-    width: 1300px;
-    margin: 0 auto;
-}
-
 .card__wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 127px;
-    grid-row-gap: 96px;
+    grid-column-gap: 37px;
+    grid-row-gap: 37px;
 }

@@ -1,0 +1,8 @@
+.profile_page {
+    background: #FFEBCF;
+    padding: 207px 0;
+}
+.profile_page .container {
+    display: flex;
+    justify-content: space-between;
+}
