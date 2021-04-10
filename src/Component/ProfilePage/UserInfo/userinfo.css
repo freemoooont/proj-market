@@ -1,0 +1,21 @@
+.prof__info {
+    border-radius: 33px;
+    background: #FFFFFF;
+    width: 342px;
+    min-height: 728px;
+    padding: 27px 55px 27px 19px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+}
+.info__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info__head {
+    margin-left: 28px;
+}
+.info__text {
+    margin-top: 35px;
+}

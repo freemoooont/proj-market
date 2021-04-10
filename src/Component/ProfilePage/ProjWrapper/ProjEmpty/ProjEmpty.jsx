@@ -1,19 +1,17 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './projempty.css';
 import {Link} from "react-router-dom";
 
 function ProjEmpty(){
     return(
-        <div className="profile__proj">
+       <Fragment>
             <div className="proj__empty--info">
                 У вас пока нет проектов, вы можете выбрать 3 проекта и присвоить им разные приоритеты.
             </div>
-            <div className="proj__empty--btn">
-                <Link to="/">
-                    <button>Перейти на страницу проектов</button>
-                </Link>
-            </div>
-        </div>
+            <Link to="/" className="proj__empty--btn">
+                Перейти на страницу проектов
+            </Link>
+       </Fragment>
     )
 }
 

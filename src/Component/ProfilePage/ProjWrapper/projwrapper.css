@@ -1,0 +1,17 @@
+.profile__proj {
+    border-radius: 33px;
+    background: #FFFFFF;
+    width: 728px;
+    height: 728px;
+    position: relative;
+}
+.proj__empty--info {
+margin: 0 auto;
+width: 400px;
+margin-top: 104px;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+text-decoration-line: underline;
+color: #4E4E4E;
+}

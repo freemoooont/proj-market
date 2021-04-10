@@ -1,10 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './topmenu.css'
 
 import MenuIco from './MenuIco/MenuIco'
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
 
 import logoSvg from '../../assets/img/LogoIco1.svg'
+import logoIrnitu from '../../assets/img/logo_irnitu.png'
 
 import background1 from '../../assets/img/Top_menu_background.svg'
 import background2 from '../../assets/img/Top_menu_background_2.svg'
@@ -36,9 +38,9 @@ function TopMenu(){
     return(
         <div className="top__menu--wrapper">
             <div className="top__menu--logo-wrapper">
-                <MenuIco logoSvg={logoSvg}/>
+                <Link to = "/"><MenuIco logoSvg={logoSvg}/></Link>
                 <div className="top__menu--logo-vert-line"></div>
-                <MenuIco logoSvg={logoSvg}/>
+                <MenuIco logoSvg={logoIrnitu}/>
             </div>
             <DropdownMenu background={menu.menu1.background} btnName={menu.menu1.btnName} menuNames={menu.menu1.menu1}/>
             <DropdownMenu background={menu.menu2.background} btnName={menu.menu2.btnName} menuNames={menu.menu2.menu2}/>
