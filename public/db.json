@@ -146,25 +146,37 @@
       "description": "Это полное описание проекта"
     }
   ],
-  "select_projects": [{
-    "id": 1,
-    "title": "Название проекта 1",
-    "desc" : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    "date" : "2021-03-12",
-    "currentPeople" : 11,
-    "maxPeople" : 13,
-    "author" : {
-      "id" : 1,
-      "name" : "Иван Иванович Иванов",
-      "ico" : "ico_author_dev.png",
-      "position" : "Профессор",
-      "malito" : "ivanov@istu.edu",
-      "contacts" : [
-        {"tg": "uri_to_tg"},
-        {"vk": "uri_to_vk"},
-        {"ok": "uri_to_ok"},
-        {"fb": "uri_to_fb"}
-      ]
+  "select_projects": [
+    {
+      "info": {
+        "title": "Название проекта 1",
+        "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "date": "2021-03-12",
+        "currentPeople": 11,
+        "maxPeople": 13,
+        "author": {
+          "id": 1,
+          "name": "Иван Иванович Иванов",
+          "ico": "ico_author_dev.png",
+          "position": "Профессор",
+          "malito": "ivanov@istu.edu",
+          "contacts": [
+            {
+              "tg": "uri_to_tg"
+            },
+            {
+              "vk": "uri_to_vk"
+            },
+            {
+              "ok": "uri_to_ok"
+            },
+            {
+              "fb": "uri_to_fb"
+            }
+          ]
+        }
+      },
+      "id": 1
     }
-  }]
+  ]
 }

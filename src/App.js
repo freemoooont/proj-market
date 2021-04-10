@@ -17,7 +17,7 @@ function App( ) {
     const dispatch = useDispatch();
     const isLogin = useSelector( ({ user }) => user.isLogin);
     const user = useSelector(( { user } ) => user.items);
-    const isLoaded = useSelector ( ({ user }) => user.isLoaded);
+    const isLoadedProj = useSelector ( ({ project }) => project.isLoaded);
 
 
     const onEnterHandler = useCallback  ( ()=> {

@@ -3,6 +3,7 @@ import { ProjectHeader, ButtonUI, Deadlines, People, Author } from "../../Compon
 
 import Loader from "react-loader-spinner";
 
+
 import { useParams } from "react-router-dom";
 
 import "./project.css"
@@ -26,7 +27,9 @@ function Project() {
     const idProj = isLoaded ? state.id : null
 
     React.useEffect(() => {
-        dispatch(fetchProject(projId - 1));
+        setTimeout(
+            ()=>dispatch(fetchProject(projId - 1))
+    ,3000)
     }, [])
 
 
@@ -65,12 +68,14 @@ function Project() {
                     <Author author={author} />
                 </Fragment>
                 : <div>
-                    <Loader
-                        type="Puff"
+                    <Loader style={{textAlign:`center`,
+                                    margin: `150px 0`
+                                    }}
+                        type="ThreeDots"
                         color="#00BFFF"
-                        height={59}
-                        width={59}
-                        timeout={3000}
+                        height={1000}
+                        width={1000}
+                        timeout={0}
                     />
                 </div>}
 

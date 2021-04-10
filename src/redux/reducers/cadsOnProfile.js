@@ -2,7 +2,7 @@ const initialState = {
     items: [],
     priority: [],
     isLoaded: false
-}
+};
 
 const cardsOnProfile = (state = initialState, action) =>{
     switch (action.type){
@@ -12,5 +12,10 @@ const cardsOnProfile = (state = initialState, action) =>{
                 items: action.payload,
                 isLoaded: true
             }
+        default:
+            return state
+
     }
 }
+
+export default cardsOnProfile;

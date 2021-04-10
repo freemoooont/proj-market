@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export const fetchUser = (id) => dispatch => {
     axios
         .get('http://localhost:3000/db.json')
@@ -24,7 +25,9 @@ export const setLoaded = (payload) => ({
     payload
 })
 
-export const selectProj = (id) => ({
-    type: 'SELECT_PROJ',
-    payload: id
-})
+export const selectProj = (id) => {
+    return ({
+        type: 'SELECT_PROJ',
+        payload: id
+    })
+}
