@@ -1,0 +1,73 @@
+.project_card-ext{
+    width: 722px;
+    height: 192px;
+    border-radius: 66px;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/img/project_img.png) center / cover no-repeat;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 20px 40px;
+}
+
+.project_card-institutes {
+    position: absolute;
+    bottom: 26px;
+    right: 77px;
+}
+
+.project_card-priority {
+    position: absolute;
+    top: 20px;
+    right: 77px;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.project_card-institute {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));
+    width: 44px;
+    height: 44px;
+    float: right;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project_card-institute a {
+    height: 29px;
+}
+.project_card-title {
+    font-size: 36px;
+    line-height: 42px;
+}
+.project_card-decr {
+    margin-top: 11px;
+}
+.project_card_-ext-back {
+    background: white;
+    text-shadow: none;
+    color: black;
+}
+.project_card-date {
+    position: absolute;
+    top: 20px;
+    right: 77px;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.project_card_teacher-wrap {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.project_card_teacher-wrap img {
+    width: 50px;
+    height: 50px;
+}
+.project_card_teacher-info {
+    margin-left: 20px;
+}
+.project_card_teacher-email {
+    color: #787878;
+}
