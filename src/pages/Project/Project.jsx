@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ProjectHeader, ButtonUI, Deadlines, People } from "../../Component";
+import { ProjectHeader, ButtonUI, Deadlines, People, Author } from "../../Component";
 
 import Loader from "react-loader-spinner";
 
@@ -61,6 +61,8 @@ function Project() {
                     <img className="project--image" src={`/${state.img_side}`} />
                     <Deadlines deadlines={deadlines} />
                     <People people={people} />
+                    <hr></hr>
+                    <Author author={author} />
                 </Fragment>
                 : <div>
                     <Loader

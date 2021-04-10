@@ -8,3 +8,4 @@ export { default as ProjectHeader} from './ProjectPage/ProjectHeader/ProjectHead
 export { default as ButtonUI } from './UI/Button/Button'
 export { default as Deadlines} from './ProjectPage/ProjectDeadlines/Deadlines'
 export { default as People } from './ProjectPage/ProjectPeople/People'
+export { default as Author} from './ProjectPage/ProjectAuthor/Author'
