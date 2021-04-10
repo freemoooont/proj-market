@@ -7,7 +7,7 @@ function UserInfo( {srcIco, fullName, group, years, study, achv, skills} ){
         <div className="prof__info">
             <div className="info__main-wrapper">
                 <div className="info__img">
-                    <img src={`/${srcIco}`}/>
+                    <img src={`/${srcIco}`} alt={fullName}/>
                 </div>
                 <div className="info__head">
                     <div className="head__name">{fullName}</div>

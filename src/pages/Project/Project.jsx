@@ -1,41 +1,39 @@
 import React, { Fragment } from "react";
+import "./project.css"
 import { ProjectHeader, Deadlines, People, Author } from "../../Component";
 
 import Loader from "react-loader-spinner";
-
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import { useParams } from "react-router-dom";
-
-import "./project.css"
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import { useDispatch, useSelector } from "react-redux"
 import { fetchProject } from "../../redux/actions/project";
 import { selectProj }  from "../../redux/actions/user";
+
 
 function Project() {
     const { projId } = useParams();
 
     const dispatch = useDispatch();
     const state = useSelector(({ project }) => project.items);
-    const isLoaded = useSelector(({ project }) => project.isLoaded)
+    const isLoaded = useSelector(({ project }) => project.isLoaded);
+    const isLogin = useSelector(({user}) => user.isLogin);
 
-    const author = isLoaded ? { ...state.author } : "LOH PIDOR";
-    const desc = isLoaded ? state.desc : "hui, a ne desc";
-    const deadlines = isLoaded ? state.deadlines : null;
-    const people = isLoaded ? state.people : null;
-    const idProj = isLoaded ? state.id : null
+    const author = { ...state.author }
+    const desc = state.desc
+    const deadlines = state.deadlines
+    const people = state.people
+    const idProj = state.id
 
     React.useEffect(() => {
-        setTimeout(
+        setTimeout(                                                 //эмуляция подгрузки из бд
             ()=>dispatch(fetchProject(projId - 1))
     ,3000)
-    }, [])
-
+    })
 
 
     const onSelectPorjHandle = (id)=> {
-        console.log('Я вызвался!')
         dispatch(selectProj(id))
     }
 
@@ -49,8 +47,9 @@ function Project() {
                         name={author.name}
                         brief={state.brief_desc}
                         title={state.title}
-                        ico={author.ico} />
-                    <section class="project_descr">
+                        ico={author.ico}
+                    />
+                    <section className="project_descr">
                         <div className="container">
                             <div className="project__desc-head">
                                 <h2 className="project__descr--label">Описание проекта</h2>
@@ -61,11 +60,13 @@ function Project() {
                                     <p key={idx}>{obj.p}</p>
                                 )
                             }
-                            <button
-                                onClick={()=>onSelectPorjHandle(idProj)}
-                            >
-                                Записаться на проект
-                            </button>
+                            { isLogin ?
+                                <button
+                                    onClick={() => onSelectPorjHandle(idProj)}>
+                                    Записаться на проект
+                                </button>
+                                : null
+                            }
                             <img className="project--image" src={`/${state.img_side}`} />
                         </div>
                     </section>

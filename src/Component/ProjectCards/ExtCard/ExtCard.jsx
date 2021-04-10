@@ -11,7 +11,7 @@ function ExtCard () {
     })
     return(
         <div onClick={() => set(state => !state)}>
-            <a.div className="project_card_-ext-back" style={{opacity: opacity.interpolate(o => 1 - o), transform}}>
+            <a.div className="project_card project_card_back" style={{opacity: opacity.interpolate(o => 1 - o), transform}}>
                 <div className="project_card-title project_card-title_back">
                     Название проекта
                 </div>
@@ -33,8 +33,8 @@ function ExtCard () {
                         </div>
                 </div>
             </a.div>
-            <a.div className="project_card-ext"
-                   style={{opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`)}}>
+            <a.div className="project_card"
+                   style={{opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`)}}>
                 <div className="project_card-title">
                     Название проекта
                 </div>

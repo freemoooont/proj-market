@@ -5,11 +5,11 @@ function Deadlines({deadlines}){
         <div>
             <h2 className="deadline__label">Сроки</h2>
             <table>
-            {deadlines.map((dedline) => {
+            {deadlines.map((item,idx) => {
                 return (
-                        <tr key={dedline.id}>
-                            <td>{ dedline.title }</td>
-                            <td>{ dedline.date }</td>
+                        <tr key={idx}>
+                            <td>{ item.title }</td>
+                            <td>{ item.date }</td>
                         </tr>
                 )
             })}
