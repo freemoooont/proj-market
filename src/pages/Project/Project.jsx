@@ -50,18 +50,25 @@ function Project() {
                         brief={state.brief_desc}
                         title={state.title}
                         ico={author.ico} />
-                    <h2 className="project__desc--label">Описание проекта</h2>
-                    {
-                        desc.map((obj, idx) =>
-                            <p key={idx}>{obj.p}</p>
-                        )
-                    }
-                    <button
-                        onClick={()=>onSelectPorjHandle(idProj)}
-                    >
-                        Записаться на проект
-                    </button>
-                    <img className="project--image" src={`/${state.img_side}`} />
+                    <section class="project_descr">
+                        <div className="container">
+                            <div className="project__desc-head">
+                                <h2 className="project__descr--label">Описание проекта</h2>
+                                <div className="project__descr-button"></div>
+                            </div>
+                            {
+                                desc.map((obj, idx) =>
+                                    <p key={idx}>{obj.p}</p>
+                                )
+                            }
+                            <button
+                                onClick={()=>onSelectPorjHandle(idProj)}
+                            >
+                                Записаться на проект
+                            </button>
+                            <img className="project--image" src={`/${state.img_side}`} />
+                        </div>
+                    </section>
                     <Deadlines deadlines={deadlines} />
                     <People people={people} />
                     <hr></hr>
