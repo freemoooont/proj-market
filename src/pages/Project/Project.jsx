@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ProjectHeader, ButtonUI, Deadlines, People, Author } from "../../Component";
+import { ProjectHeader, Deadlines, People, Author } from "../../Component";
 
 import Loader from "react-loader-spinner";
 

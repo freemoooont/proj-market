@@ -17,15 +17,12 @@ function App( ) {
     const dispatch = useDispatch();
     const isLogin = useSelector( ({ user }) => user.isLogin);
     const user = useSelector(( { user } ) => user.items);
-    const isLoadedProj = useSelector ( ({ project }) => project.isLoaded);
-
 
     const onEnterHandler = useCallback  ( ()=> {
          dispatch(fetchUser(0))
-    },[])
+    },[dispatch])
 
     let location = useLocation()
-    console.log(isLogin)
 
     return (
         <Fragment>
@@ -40,7 +37,7 @@ function App( ) {
                         />
             }
             {
-                location.pathname != "/project/1" ?
+                location.pathname !== "/project/1" ?
                 <TopMenu/>
                 :null
             }

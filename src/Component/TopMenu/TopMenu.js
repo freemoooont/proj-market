@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import './topmenu.css'
 
 import MenuIco from './MenuIco/MenuIco'
@@ -15,26 +15,33 @@ function TopMenu(){
     const menu =
         {
             menu1: {
-                btnName: 'Кнопка меню',
+                btnName: 'Главная',
+                uri: '/',
                 menu1: ['Пункт меню','Пункт меню','Пункт меню'],
                 background: background1
             },
             menu2: {
-                btnName: 'Кнопка меню',
+                btnName: 'Новости',
+                uri: '/news',
                 menu2: ['Пункт меню', 'Пункт меню', 'Пункт меню'],
                 background: background2
             },
             menu3: {
-                btnName: 'Кнопка меню',
+                btnName: 'Галлерия проектов',
+                uri: '/gallery',
                 menu3: ['Пункт меню','Пункт меню'],
                 background: background2
             },
             menu4: {
-                btnName: 'Кнопк меню',
+                btnName: 'О ярмарке',
+                uri: '/about',
                 menu4: ['Пункт меню', 'Пункт меню'],
                 background: background1
             }
         }
+
+    let location = useLocation();
+
     return(
         <div className="top__menu--wrapper">
             <div className="top__menu--logo-wrapper">
@@ -42,10 +49,10 @@ function TopMenu(){
                 <div className="top__menu--logo-vert-line"></div>
                 <MenuIco logoSvg={logoIrnitu}/>
             </div>
-            <DropdownMenu background={menu.menu1.background} btnName={menu.menu1.btnName} menuNames={menu.menu1.menu1}/>
-            <DropdownMenu background={menu.menu2.background} btnName={menu.menu2.btnName} menuNames={menu.menu2.menu2}/>
-            <DropdownMenu background={menu.menu3.background} btnName={menu.menu3.btnName} menuNames={menu.menu3.menu1}/>
-            <DropdownMenu background={menu.menu4.background} btnName={menu.menu4.btnName} menuNames={menu.menu4.menu2}/>
+            <DropdownMenu uri={menu.menu1.uri} location={location.pathname} background={menu.menu1.background} btnName={menu.menu1.btnName} menuNames={menu.menu1.menu1}/>
+            <DropdownMenu uri={menu.menu2.uri} location={location.pathname} background={menu.menu2.background} btnName={menu.menu2.btnName} menuNames={menu.menu2.menu2}/>
+            <DropdownMenu uri={menu.menu3.uri} location={location.pathname} background={menu.menu3.background} btnName={menu.menu3.btnName} menuNames={menu.menu3.menu1}/>
+            <DropdownMenu uri={menu.menu4.uri} location={location.pathname} background={menu.menu4.background} btnName={menu.menu4.btnName} menuNames={menu.menu4.menu2}/>
            
         </div>
     )
