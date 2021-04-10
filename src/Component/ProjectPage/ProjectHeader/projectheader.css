@@ -1,6 +1,6 @@
 .project__header{
-    width: 100%;
     font-size: 72px;
+    height: 817px;
 }
 .project__header--info{
     z-index: 1;
@@ -8,4 +8,18 @@
     left: 410px;
     top: 205px;
 }
-
+.project__brief {
+    font-size: 24px;
+    margin-top: 25px;
+    color: white;
+}
+.project__author {
+    display: flex;
+    align-items: center;
+    margin-top: 103px;
+}
+.project__author-name {
+    font-size: 24px;
+    color: white;
+    margin-left: 33px;
+}
