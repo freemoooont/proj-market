@@ -29,8 +29,11 @@ function MainCard( props ){
     },[status])
 
     return (
+        
         <div className="main__card">
-            <img src={props.imgUrl}/>
+            <Link to={`/project/${props.id}`}>
+                <img src={props.imgUrl}/>
+            </Link>
             <div className="card__container">
                 <div className="card__status">
                     <img src={ico}/>

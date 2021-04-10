@@ -15,25 +15,25 @@ function TopMenu(){
     const menu =
         {
             menu1: {
-                btnName: 'Главная',
+                btnName: 'Новости',
                 uri: '/',
                 menu1: ['Пункт меню','Пункт меню','Пункт меню'],
                 background: background1
             },
             menu2: {
-                btnName: 'Новости',
+                btnName: 'проектов',
                 uri: '/news',
                 menu2: ['Пункт меню', 'Пункт меню', 'Пункт меню'],
                 background: background2
             },
             menu3: {
-                btnName: 'Галлерия проектов',
+                btnName: 'О ярмарке',
                 uri: '/gallery',
                 menu3: ['Пункт меню','Пункт меню'],
                 background: background2
             },
             menu4: {
-                btnName: 'О ярмарке',
+                btnName: 'Компаниям',
                 uri: '/about',
                 menu4: ['Пункт меню', 'Пункт меню'],
                 background: background1

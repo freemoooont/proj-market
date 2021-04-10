@@ -1,5 +1,6 @@
 .cards {
-    margin-top: 77px;
+    margin: 77px 0;
+    
 }
 .card__wrapper{
     display: grid;
