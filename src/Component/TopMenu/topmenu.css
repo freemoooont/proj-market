@@ -15,8 +15,11 @@
 
 .top__menu--logo-wrapper{
     display: flex;
+    align-items: center
 }
 
 .top__menu--logo-vert-line{
-    border-left: 1px solid #2F80ED;
+    height: 56px;
+    width: 1px;
+    background: #77B1FF;
 }
