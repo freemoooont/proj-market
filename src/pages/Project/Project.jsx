@@ -50,7 +50,7 @@ function Project() {
                         brief={state.brief_desc}
                         title={state.title}
                         ico={author.ico} />
-                    <section class="project_descr">
+                    <section className="project_descr">
                         <div className="container">
                             <div className="project__desc-head">
                                 <h2 className="project__descr--label">Описание проекта</h2>
