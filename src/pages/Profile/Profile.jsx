@@ -8,7 +8,8 @@ function Profile(){
     //const dispatch = useDispatch();
     const user = useSelector(( { user } ) => user.items);
     const isLoaded = useSelector ( ({ user }) => user.isLoaded);
-    const selectProj = useSelector( ({user}) => user.selectProj)
+    const selectProj = useSelector( ({user}) => user.selectProj);
+
 
     console.log(selectProj !== null ? true : false)
     return(

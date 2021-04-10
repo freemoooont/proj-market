@@ -2,8 +2,7 @@ import axios from "axios";
 
 export const fetchSelProj = ( id ) => dispatch => {
     axios.get('http://localhost:3000/db.json').then(({data})=>{
-        id.map((item)=> dispatch(setSelProj(data[item-1])))
-
+        id.map((item) => dispatch(setSelProj(data.select_projects[item-1])))
     })
 };
 
