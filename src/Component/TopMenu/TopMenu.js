@@ -21,7 +21,7 @@ function TopMenu(){
                 background: background1
             },
             menu2: {
-                btnName: 'проектов',
+                btnName: 'Галлерея проектов',
                 uri: '/news',
                 menu2: ['Пункт меню', 'Пункт меню', 'Пункт меню'],
                 background: background2
