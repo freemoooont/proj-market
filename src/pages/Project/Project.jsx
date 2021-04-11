@@ -3,9 +3,14 @@ import "./project.css"
 import { ProjectHeader, Deadlines, People, Author } from "../../Component";
 
 import Loader from "react-loader-spinner";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
 
 import { useParams } from "react-router-dom";
+
+import "./project.css"
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
+
 
 import { useDispatch, useSelector } from "react-redux"
 import { fetchProject } from "../../redux/actions/project";
